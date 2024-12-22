@@ -367,3 +367,7 @@ pre-commit run --all-files
 This is free software and is provided as is. The author makes no guarantee that its 
 results are accurate and is not responsible for any losses caused by the use of the 
 code. Bugs can be reported as issues.
+
+##参考网站
+https://www.futunn.com/learn/detail-buy-a-call-option-75944-230209072?global_content=%7B%22promote_id%22%3A13766%2C%22sub_promote_id%22%3A14%7D
+http://1.optbbs.com//d/Option_Calculator_-_OptionCombo_-_Option_combinations_made_easy.html#
