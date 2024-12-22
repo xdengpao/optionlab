@@ -1,9 +1,14 @@
-
-import numpy as np
 from numpy import zeros
 import datetime as dt
 from optionlab import run_strategy
 import matplotlib.pyplot as plt
+import datetime as dt
+
+import matplotlib.pyplot as plt
+from numpy import zeros
+
+from optionlab import run_strategy
+
 
 #
 def calculate_strategy_inputs(stock_name, stock_price, stock_n, option_stock_price, option_price, option_n, volatility, start_date, target_date, interest_rate):
@@ -86,9 +91,8 @@ def plot_strategy(out, stock_name, stock_price,option_stock_price,option_price):
     profit_range_str = ""
     for low, high in profit_ranges:
         profit_range_str += f"\n {low:.2f} ---> {high:.2f}"
-        
-        
-        
+
+
     plt.title(
         f"Stock name: {stock_name}\n"
         f"Stock price: {stock_price:.2f}\n"
@@ -98,7 +102,8 @@ def plot_strategy(out, stock_name, stock_price,option_stock_price,option_price):
         f"Maximum loss: {abs(out.minimum_return_in_the_domain):.2f}\n"
         f"Maximum profit: {out.maximum_return_in_the_domain:.2f}\n"
         f"Probability of Profit (PoP): {out.probability_of_profit * 100.0:.1f}%\n"
-        f"Profitable stock price range:  {profit_range_str} "
+        f"Profitable stock price range:  {profit_range_str}",
+        loc="left"
     )
     
     
